@@ -10,9 +10,26 @@ use Clone qw/clone/;
 use Math::Symbolic qw/:all/;
 use Math::Symbolic::Custom::Pattern::Export;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 use constant EPSILON => 1e-29;
+
+use constant {
+	TYPE => 0,
+	VAL => 1,
+	OPS => 2,
+};
+
+use constant PATTERN => -1;
+
+use constant {
+	ANY_TREE    => 0,
+	ANY_CONST   => 1,
+	ANY_VAR     => 2,
+	NAMED_TREE  => 3,
+	NAMED_CONST => 4,
+	NAMED_VAR   => 5,
+};
 
 =head1 NAME
 
@@ -31,7 +48,7 @@ Math::Symbolic::Custom::Pattern - Pattern matching on Math::Symbolic trees
     print "The pattern matches the formula.\n";
   }
   else {
-    print "The pattern does not matche the formula.\n";
+    print "The pattern does not match the formula.\n";
   }
 
   # will print "The pattern matches the formula" since "a" is
@@ -114,10 +131,22 @@ for any constants.
 
 This module does not export anything.
 
+=head2 METHODS
+
+This is a list ofpublic methods.
+
+=over 2
+
 =cut
 
 
+=item new
 
+C<new()> is the constructor for Math::Symbolic::Custom::Pattern objects.
+It takes a Math::Symbolic tree as first argument which will be transformed
+into a pattern. See the C<match()> method documentation.
+
+=cut
 
 sub new {
 	my $proto = shift;
@@ -147,23 +176,6 @@ sub new {
 
 	return bless $self => $class;
 }
-
-use constant {
-	TYPE => 0,
-	VAL => 1,
-	OPS => 2,
-};
-
-use constant PATTERN => -1;
-
-use constant {
-	ANY_TREE    => 0,
-	ANY_CONST   => 1,
-	ANY_VAR     => 2,
-	NAMED_TREE  => 3,
-	NAMED_CONST => 4,
-	NAMED_VAR   => 5,
-};
 
 
 sub _descend_build {
@@ -223,6 +235,19 @@ sub _descend_build {
 
 	return $tree;
 }
+
+
+=item match
+
+This method takes a Math::Symbolic tree as first argument. It throws a
+fatal error if this is not the case.
+
+It returns a true value if the pattern matches the tree and a false value
+if the pattern does not match. Please have a look at the L<DESCRIPTION>
+to find out what I<matching> means in this context.
+
+=cut
+
 
 sub match {
 	my $self = shift;
@@ -364,6 +389,7 @@ sub _descend_match {
 }
 
 
+
 =begin comment
 
 If completed, this could remove all placeholders that exist only once
@@ -397,8 +423,11 @@ sub _descend_generalize {
 
 =cut
 
+
 1;
 __END__
+
+=back
 
 =head1 SEE ALSO
 
