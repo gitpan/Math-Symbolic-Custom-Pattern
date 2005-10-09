@@ -1,4 +1,9 @@
 Revision history for Perl extension Math::Symbolic::Custom::Pattern.
 
+1.02  Thu Sep  9 21:47:12 2005
+	- Added license info to META.yml
+	- Fixed trouble with Math::Symbolic version requirement.
+	- Bumped Math::Symbolic requirement to 0.162
+
 1.00  Thu Sep  9 21:47:12 2005
 	- original version as uploaded to CPAN

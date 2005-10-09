@@ -6,7 +6,7 @@ WriteMakefile(
     NAME              => 'Math::Symbolic::Custom::Pattern',
     VERSION_FROM      => 'lib/Math/Symbolic/Custom/Pattern.pm', # finds $VERSION
     PREREQ_PM         => {
-	Math::Symbolic => 0.150,
+	Math::Symbolic => '0.162',
 	Test::More => 0,
 }, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005

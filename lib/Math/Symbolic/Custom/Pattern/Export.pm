@@ -9,7 +9,7 @@ use Math::Symbolic qw/parse_from_string/;
 use Math::Symbolic::Custom::Base;
 BEGIN {*import = \&Math::Symbolic::Custom::Base::aggregate_import}
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 =head1 NAME
 
