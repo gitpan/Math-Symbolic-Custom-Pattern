@@ -9,7 +9,7 @@ use Math::Symbolic qw/parse_from_string/;
 use Math::Symbolic::Custom::Base;
 BEGIN {*import = \&Math::Symbolic::Custom::Base::aggregate_import}
 
-our $VERSION = '1.02';
+our $VERSION = '1.10';
 
 =head1 NAME
 
@@ -47,6 +47,9 @@ our $Aggregate_Export = [qw/is_of_form to_pattern/];
 
 This method can be called on any Math::Symbolic tree. First argument must be
 a pattern. Returns true if the pattern matches the tree and false if not.
+As with the C<match()> method on Math::Symbolic::Custom::Pattern objects,
+the true value returned reflects the way the pattern matched. Please see
+L<Math::Symbolic::Custom::Pattern> for details.
 
 The pattern may either be a Math::Symbolic::Custom::Pattern object (fastest)
 or a Math::Symbolic tree representing a pattern (decent speed, since only the

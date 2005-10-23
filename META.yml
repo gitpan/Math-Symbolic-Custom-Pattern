@@ -1,12 +1,23 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Math-Symbolic-Custom-Pattern
-version:      1.02
-version_from: lib/Math/Symbolic/Custom/Pattern.pm
-installdirs:  site
+--- #YAML:1.0
+name: Math-Symbolic-Custom-Pattern
+version: 1.10
+author:
+  - |-
+    Steffen Mueller <symbolic-module at steffen-mueller dot net>
+abstract: Pattern matching on Math::Symbolic trees
+license: perl
 requires:
-    Math::Symbolic:                0.162
-    Test::More:                    0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+  Math::Symbolic: 0.162
+recommends:
+  Test::Pod: 1.0
+  Test::Pod::Coverage: 1.0
+build_requires:
+  Test::More: 0
+provides:
+  Math::Symbolic::Custom::Pattern:
+    file: lib/Math/Symbolic/Custom/Pattern.pm
+    version: 1.10
+  Math::Symbolic::Custom::Pattern::Export:
+    file: lib/Math/Symbolic/Custom/Pattern/Export.pm
+    version: 1.10
+generated_by: Module::Build version 0.2608

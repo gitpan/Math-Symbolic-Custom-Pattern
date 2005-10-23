@@ -1,5 +1,9 @@
 Revision history for Perl extension Math::Symbolic::Custom::Pattern.
 
+1.10  Wed Oct 12 22:32:53 2005
+	- Now using Module::Build.
+	- Now match() returns meta information on how the tree matched.
+
 1.02  Thu Sep  9 21:47:12 2005
 	- Added license info to META.yml
 	- Fixed trouble with Math::Symbolic version requirement.

@@ -1,3 +1,4 @@
+Build.PL
 Changes
 lib/Math/Symbolic/Custom/Pattern.pm
 lib/Math/Symbolic/Custom/Pattern/Export.pm
@@ -8,3 +9,4 @@ README
 t/00pod.t
 t/00podcover.t
 t/01basic.t
+SIGNATURE    Added here by Module::Build

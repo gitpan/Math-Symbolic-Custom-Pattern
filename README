@@ -1,5 +1,5 @@
-Math-Symbolic-Custom-Pattern version 1.00
-=========================================
+Math::Symbolic::Custom::Pattern version 1.10
+============================================
 
 This module is an extension to the Math::Symbolic module. A basic
 familiarity with that module is required.
@@ -17,6 +17,20 @@ INSTALLATION
 
 To install this module type the following:
 
+   perl Build.PL
+   ./Build
+   ./Build test
+   ./Build install
+
+On platforms that don't support the "./" notation, that would be:
+
+   perl Build.PL
+   perl Build
+   perl Build test
+   perl Build install
+
+If you wish, you may use the old MakeMaker style instead:
+
    perl Makefile.PL
    make
    make test
@@ -24,9 +38,10 @@ To install this module type the following:
 
 DEPENDENCIES
 
-This module requires these other modules and libraries:
+For list of dependencies that includes versions, please refer to the
+META.yml file in this distribution.
 
-  Math::Symbolic (version 0.150 and higher)
+  Math::Symbolic
   Test::More
 
 COPYRIGHT AND LICENCE

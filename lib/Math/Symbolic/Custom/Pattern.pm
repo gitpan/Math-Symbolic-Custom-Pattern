@@ -10,7 +10,7 @@ use Clone qw/clone/;
 use Math::Symbolic qw/:all/;
 use Math::Symbolic::Custom::Pattern::Export;
 
-our $VERSION = '1.02';
+our $VERSION = '1.10';
 
 use constant EPSILON => 1e-29;
 
@@ -246,6 +246,27 @@ It returns a true value if the pattern matches the tree and a false value
 if the pattern does not match. Please have a look at the L<DESCRIPTION>
 to find out what I<matching> means in this context.
 
+As a matter of fact, if you need to know what subtrees were matched by the
+various C<VAR_foo>, C<TREE_bar>, and C<CONST_baz> identifiers, you can find
+out by inspecting the return value of a successful match. It will be a
+reference to a hash containing three key/value pairs with the keys
+C<trees>, C<vars>, and C<constants>. Each of these will again point to a hash.
+These hashes contain the names of the matched subtrees. For example, if your
+pattern is C<TREE_x + TREE_x> and it matches C<foo*bar + foo*bar>, then
+the return value will be:
+
+  {
+    constants => {},
+    trees     => {},
+    vars      => {
+      'x' => 'foo*bar',
+    }
+  }
+
+Except that C<foo*bar> will actually be the corresponding Math::Symbolic tree
+and not a string. Please note that the subtrees are real subtrees. Modifying
+them will result in a modified original tree as well.
+
 =cut
 
 
@@ -266,7 +287,8 @@ sub match {
 	};
 	
 	my $okay = _descend_match($self->{pattern}, $tree, $info_copy);
-	return $okay;
+	return $info_copy if $okay;
+	return undef;
 }
 
 sub _descend_match {

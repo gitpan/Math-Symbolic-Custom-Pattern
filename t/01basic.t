@@ -46,6 +46,7 @@ while (<DATA>) {
 		my $pattern = gen_pattern($pstr);
 		my $is_status = $pattern->match($tree);
 		$is_status = 0 if not defined $is_status;
+		$is_status = 1 if $is_status;
 		ok(
 		( ($status and $is_status) or (!$status and !$status) ),
 		"Pattern matches tree with expected status (Expected: $status, Real: $is_status)"
