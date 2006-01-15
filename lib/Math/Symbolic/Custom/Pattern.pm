@@ -10,7 +10,7 @@ use Clone qw/clone/;
 use Math::Symbolic qw/:all/;
 use Math::Symbolic::Custom::Pattern::Export;
 
-our $VERSION = '1.10';
+our $VERSION = '1.11';
 
 use constant EPSILON => 1e-29;
 

@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.44.
+signed via the Module::Signature module, version 0.50.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,21 +14,21 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 1229b6ccfa372797a1896b4b26615cfc5f197671 Build.PL
-SHA1 1ec5bcb5174e7e64ee2d85f2dcd31a1b1b8dc2cd Changes
+SHA1 30ac1a787989b5b26454e314fdae6f47f1ac82d4 Build.PL
+SHA1 0e8ae94233b247d7b314466d635ff0c8e6ce9dd7 Changes
 SHA1 94c8ccdeb381a2aeda4736683e8cb5abebde19d5 MANIFEST
-SHA1 51283e239647f3c19f3dc2c2d3f720215c0d1c6c META.yml
-SHA1 9f1048759a0d68c6339e7e5461cce9b4c10f3b45 Makefile.PL
-SHA1 bf9f6e88486aff95fc33a0de64190aafc279b6dd README
-SHA1 d59d77be9017ce4a8ef2050474d492176b71e280 lib/Math/Symbolic/Custom/Pattern.pm
-SHA1 ad9846caece776dbf4b7d9ef2f73a61f8bd9f3ce lib/Math/Symbolic/Custom/Pattern/Export.pm
+SHA1 19b651ba52dfe843e931d8a69df0a124cecd900e META.yml
+SHA1 b2c1ead4d04f43a819f4689865fa95a1594b7f13 Makefile.PL
+SHA1 579bf1fc8c7a25410efca0ab9d21649688a127d9 README
+SHA1 bf07f3435ee76f2319470b5934db0b6603818083 lib/Math/Symbolic/Custom/Pattern.pm
+SHA1 86cca0441b1c0818262364fbae2b9dc0f25276ff lib/Math/Symbolic/Custom/Pattern/Export.pm
 SHA1 bb0da54f2b3f2d7955baa41ee458cb3d1887f475 t/00pod.t
 SHA1 2db32c1aac44c2e41530ea63431166d91bd458bf t/00podcover.t
 SHA1 6ee4550003b16a20d95888b57d10ee7d44a4f680 t/01basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.0 (GNU/Linux)
 
-iD8DBQFDTXQ4ZCuimE51gxcRAmstAKCCtuy7DYy4OlEWgIK5AJPI5J6/SACeJGz5
-YKpb9lIO8whW9JbgJiEC97M=
-=k1a7
+iD8DBQFDyodUZCuimE51gxcRAu5GAJoCZPE6KLhy5ngQDR85yL6YLy2jfQCeN5ct
+O2hYsObUojnMPLHaEKWU3iE=
+=GxFx
 -----END PGP SIGNATURE-----

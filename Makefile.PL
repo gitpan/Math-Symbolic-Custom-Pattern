@@ -8,7 +8,8 @@ WriteMakefile
           'VERSION_FROM' => 'lib/Math/Symbolic/Custom/Pattern.pm',
           'PREREQ_PM' => {
                            'Test::More' => 0,
-                           'Math::Symbolic' => '0.162'
+                           'Math::Symbolic' => '0.164',
+                           'Clone' => '0'
                          }
         )
 ;
