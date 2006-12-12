@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.50.
+signed via the Module::Signature module, version 0.55.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -15,20 +15,20 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 30ac1a787989b5b26454e314fdae6f47f1ac82d4 Build.PL
-SHA1 0e8ae94233b247d7b314466d635ff0c8e6ce9dd7 Changes
+SHA1 1416634285df19d71f3e7be92b187d04006c40d5 Changes
 SHA1 94c8ccdeb381a2aeda4736683e8cb5abebde19d5 MANIFEST
-SHA1 19b651ba52dfe843e931d8a69df0a124cecd900e META.yml
-SHA1 b2c1ead4d04f43a819f4689865fa95a1594b7f13 Makefile.PL
+SHA1 8b5c83d4f28be07300a9bdc787d1b8711667be21 META.yml
+SHA1 cc1b821cc0338071297e7e307e1bbb77cf4164e0 Makefile.PL
 SHA1 579bf1fc8c7a25410efca0ab9d21649688a127d9 README
-SHA1 bf07f3435ee76f2319470b5934db0b6603818083 lib/Math/Symbolic/Custom/Pattern.pm
-SHA1 86cca0441b1c0818262364fbae2b9dc0f25276ff lib/Math/Symbolic/Custom/Pattern/Export.pm
+SHA1 ab4e427208f3e67f14ce870885bccda2531147c1 lib/Math/Symbolic/Custom/Pattern.pm
+SHA1 0d66ea1125b5524b5c253587d85731a751157334 lib/Math/Symbolic/Custom/Pattern/Export.pm
 SHA1 bb0da54f2b3f2d7955baa41ee458cb3d1887f475 t/00pod.t
 SHA1 2db32c1aac44c2e41530ea63431166d91bd458bf t/00podcover.t
 SHA1 6ee4550003b16a20d95888b57d10ee7d44a4f680 t/01basic.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.0 (GNU/Linux)
+Version: GnuPG v1.4.3 (GNU/Linux)
 
-iD8DBQFDyodUZCuimE51gxcRAu5GAJoCZPE6KLhy5ngQDR85yL6YLy2jfQCeN5ct
-O2hYsObUojnMPLHaEKWU3iE=
-=GxFx
+iD8DBQFFfsrsZCuimE51gxcRAn/IAJ9nMyarhzjHIpN4+UDK1fXnvyr+/gCgjhaf
+OWiz+isfg6yVvp+kO8EyEqQ=
+=NjD2
 -----END PGP SIGNATURE-----

@@ -1,23 +1,28 @@
 ---
 name: Math-Symbolic-Custom-Pattern
-version: 1.11
+version: 1.20
 author:
-  - Steffen Mueller <symbolic-module at steffen-mueller dot net>
+  - 'Steffen Mueller <symbolic-module at steffen-mueller dot net>'
 abstract: Pattern matching on Math::Symbolic trees
 license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
   Clone: 0
   Math::Symbolic: 0.164
+build_requires:
+  Test::More: 0
 recommends:
   Test::Pod: 1.0
   Test::Pod::Coverage: 1.0
-build_requires:
-  Test::More: 0
 provides:
   Math::Symbolic::Custom::Pattern:
     file: lib/Math/Symbolic/Custom/Pattern.pm
-    version: 1.11
+    version: 1.20
   Math::Symbolic::Custom::Pattern::Export:
     file: lib/Math/Symbolic/Custom/Pattern/Export.pm
-    version: 1.11
-generated_by: Module::Build version 0.2611
+    version: 1.20
+generated_by: Module::Build version 0.280501
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
