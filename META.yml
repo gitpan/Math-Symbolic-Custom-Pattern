@@ -1,6 +1,6 @@
 ---
 name: Math-Symbolic-Custom-Pattern
-version: 1.20
+version: 1.21
 author:
   - 'Steffen Mueller <symbolic-module at steffen-mueller dot net>'
 abstract: Pattern matching on Math::Symbolic trees
@@ -18,7 +18,7 @@ recommends:
 provides:
   Math::Symbolic::Custom::Pattern:
     file: lib/Math/Symbolic/Custom/Pattern.pm
-    version: 1.20
+    version: 1.21
   Math::Symbolic::Custom::Pattern::Export:
     file: lib/Math/Symbolic/Custom/Pattern/Export.pm
     version: 1.20
