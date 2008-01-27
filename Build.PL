@@ -6,8 +6,8 @@ my $b = Module::Build->new
    dist_author => 'Steffen Mueller <symbolic-module at steffen-mueller dot net>',
    license => 'perl',
    requires => {
-                'Math::Symbolic' => '0.164',
-				'Clone'          => '0',
+                'Math::Symbolic' => '0.510',
+                'Clone'          => '0',
                },
    recommends => {
                   'Test::Pod' => '1.0',
@@ -17,7 +17,7 @@ my $b = Module::Build->new
                       'Test::More' => 0,
                      },
    create_makefile_pl => 'traditional',
-   sign => 1,
+#   sign => 1,
 #   conflicts => {},
 #   script_files => [],
   );

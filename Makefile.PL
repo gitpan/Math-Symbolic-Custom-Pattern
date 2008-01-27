@@ -2,15 +2,15 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-          'PL_FILES' => {},
-          'INSTALLDIRS' => 'site',
           'NAME' => 'Math::Symbolic::Custom::Pattern',
-          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Math/Symbolic/Custom/Pattern.pm',
           'PREREQ_PM' => {
-                           'Test::More' => 0,
-                           'Math::Symbolic' => '0.164',
-                           'Clone' => '0'
-                         }
+                           'Clone' => '0',
+                           'Math::Symbolic' => '0.510',
+                           'Test::More' => '0'
+                         },
+          'INSTALLDIRS' => 'site',
+          'EXE_FILES' => [],
+          'PL_FILES' => {}
         )
 ;
